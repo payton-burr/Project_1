@@ -27,3 +27,10 @@ function runLocationSearch() {
 }
 
 runLocationSearch();
+
+$("infoButton").click(function(){
+    return "Hello world!";
+  });
+  $("searchResults").click(function(event){
+    $("<p>").html(event.result);
+  });
