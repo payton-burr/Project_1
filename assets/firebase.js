@@ -29,3 +29,15 @@ $('.submit-button').on('click', function() {
     location: jobLocation
   });
 });
+
+// Adding info button
+
+database.ref().on('child_added', function(childSnapshot) {
+  let newRow = $('<tr>').append(
+    $('<td>').text(childSnapshot.val().job),
+    $('<td>').text(childSnapshot.val().company),
+    $('<td>').text(childSnapshot.val().location)
+  );
+
+  $('table > tbody').append(newRow);
+});
