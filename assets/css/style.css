@@ -1,0 +1,17 @@
+body {
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.save-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.submit-button {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
