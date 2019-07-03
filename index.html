@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-=======
   
   <head>
     <meta charset="UTF-8">
@@ -21,26 +8,39 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
->>>>>>> master
   <title>Tech Job Search</title>
 </head>
 
 <body>
-  <div class="header-main text-center" style="font-size: 300%">Tech Job Search</div>
-  <div class="jumbotron container-1">
-    <div class="search-header">Job Search</div>
-    <button id="search-button1" class="input-bttn search_button1 text-center btn-info btn-sm">Search</button>
-    <input id="locationInput" for="search-location" type="text" onfocus="this.value=''" value="Search by Location"
-      class="input search-field search-input1 text-center">
-    <button id="search-button2" class="input-bttn search_button1 text-center btn-info btn-sm">Search</button>
-    <input id="descriptionInput" for="search-location" type="text" onfocus="this.value=''" value="Search by Description"
-      class="input search-field search-input1 text-center">
-  </div>
+  <div class="container-fluid">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <h1 class="text-light">Tech Job List</h1>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-4 mr-5">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="saved-listing.html">Saved Jobs</a>
+              </li>
+            </ul>
+            <button id="search-button1" class="input-bttn search_button1 text-center btn-info btn-sm mr-1">Search</button>
+            <input id="locationInput" for="search-location" type="text" onfocus="this.value=''" value="Search by Location"
+              class="input search-field search-input1 text-center mr-4">
+            <button id="search-button2" class="input-bttn search_button1 text-center btn-info btn-sm mr-1">Search</button>
+            <input id="descriptionInput" for="search-location" type="text" onfocus="this.value=''" value="Search by Description"
+              class="input search-field search-input1 text-center">
+          </div>
+          <a href="./signup.html"><button class="input-bttn text-center btn-info btn-lg">Sign Up!</button></a>
+      </nav>
+
+
   <table class="table">
-    <thead class="thead-dark">
+    <thead class="thead-light">
       <tr>
         <th scope="col">Job Title</th>
         <th scope="col">Company Name</th>
@@ -54,6 +54,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="java.js"></script>
+</div>
 </body>
-
 </html>
